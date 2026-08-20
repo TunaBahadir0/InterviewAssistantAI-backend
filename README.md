@@ -2,6 +2,13 @@
 
 This project contains the backend architecture of an AI-powered interview simulation application. The system analyzes interview performance by performing real-time emotion recognition and eye contact tracking using candidate camera feeds.
 
+## Contributors
+
+This is a 2-person team project, built together with [Mehmet Sefa Toksoy (SefaWork)](https://github.com/SefaWork).
+
+* **Tuna Bahadır** — trained the Facial Emotion Recognition (FER) model (MobileNetV2, TensorFlow/Keras), built the real-time eye-contact tracking engine (OpenCV, MediaPipe), and integrated the AI engine into the WebSocket consumer layer.
+* **Mehmet Sefa Toksoy** — built the core Django REST/Channels backend: authentication, session management, and the interview API.
+
 ## Features
 
 * **Real-Time Data Streaming:** Image frames are received and processed asynchronously via Django Channels (WebSockets) instead of standard HTTP requests.
@@ -24,7 +31,7 @@ Follow the steps below to run the project in your local environment.
 
 **1. Clone the repository:**
 ```bash
-git clone [https://github.com/SefaWork/InterviewAssistantAI-backend.git](https://github.com/SefaWork/InterviewAssistantAI-backend.git)
+git clone https://github.com/TunaBahadir0/InterviewAssistantAI-backend.git
 cd InterviewAssistantAI-backend
 ```
 
